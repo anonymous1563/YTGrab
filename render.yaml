@@ -2,7 +2,7 @@ services:
   - type: web
     name: ytgrab
     env: node
-    buildCommand: npm install
+    buildCommand: apt-get install -y ffmpeg && npm install
     startCommand: node server.js
     envVars:
       - key: NODE_ENV
