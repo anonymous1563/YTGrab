@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: ytgrab
-    env: node
-    buildCommand: apt-get install -y ffmpeg && npm install
-    startCommand: node server.js
-    envVars:
-      - key: NODE_ENV
-        value: production
